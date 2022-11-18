@@ -1,0 +1,29 @@
+<html>
+<head><title>Registration Form</title>
+<script>
+function PersonalDataVar() {
+    var name = document.getElementById("name").value;          
+    var uid = document.getElementById("uid").value;
+    var email = document.getElementById("email").value;
+    var result = '<h3>Personal Information: </h3><b>Name: </b>' + name + '<br><b>UID: </b>' + uid + '<br><b>Email: </b>' + email;
+    document.getElementById('regdata').innerHTML = result;
+}
+</script>
+</head>
+
+<body>
+<p><h2>Input User Data: </h2></p>
+
+<p>Name: &nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" name="name" id="name" /></p>
+<p>User ID: &nbsp&nbsp</label><input type="text" name="uid" id="uid" /></p>
+<p>Email: &nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" name="email" id="email" /></p>
+<p>Password: </label><input type="password" name="password" id="password" /></p>
+<button onclick=location.reload()>Reset</button>
+<button onclick="PersonalDataVar()">Submit</button> <br />
+
+<span id="regdata"></span>
+</body>
+
+</html>
+
+
